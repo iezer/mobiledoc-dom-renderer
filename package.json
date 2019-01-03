@@ -6,7 +6,7 @@
     "start": "broccoli serve",
     "test": "testem ci",
     "build": "rm -rf dist/ && broccoli build dist && npm run transpile",
-    "transpile": "babel lib --out-dir dist/esm --presets=@babel/preset-env",
+    "transpile": "babel lib --out-dir dist/esm",
     "prepublish": "npm run build",
     "build:tests": "rm -rf tests && BROCCOLI_ENV=tests broccoli build tests",
     "update-changelog": "conventional-changelog -i CHANGELOG.md -r 0 -s",
